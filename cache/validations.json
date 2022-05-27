@@ -1,0 +1,2173 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "OwnableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:21",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:35",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\AddressUpgradeable.sol:9",
+        "version": {
+          "withMetadata": "cdb9149b9f7748c1c572ed882cc88c367db432f7e2a1a20ee9d65c477d5a0f85",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:17",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "EscrowUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\escrow\\EscrowUpgradeable.sol:23",
+        "version": {
+          "withMetadata": "a0a57b4cea44c3a86fb26d338017cb836b925e552af0f0baf68ec4229fa77ae7",
+          "withoutMetadata": "c2efee760f737415eabe825224448115279cd307f2ae89148d4c228f42451979",
+          "linkedWithoutMetadata": "c2efee760f737415eabe825224448115279cd307f2ae89148d4c228f42451979"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [
+          "initialize()",
+          "depositsOf(address)",
+          "deposit(address)",
+          "withdraw(address payable)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+            },
+            {
+              "label": "_deposits",
+              "offset": 0,
+              "slot": "101",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "EscrowUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\escrow\\EscrowUpgradeable.sol:38"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "EscrowUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\escrow\\EscrowUpgradeable.sol:79"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Airdrop": {
+        "src": "contracts\\Airdrop.sol:345",
+        "version": {
+          "withMetadata": "1b0d45eebc129cb7a74dbfa53ea778c587f47afaa66e20d6f401e7eba95383e5",
+          "withoutMetadata": "a600c0d01c1079ace5cb92ea736f03c44351ad7735e157c020da3c327885ee51",
+          "linkedWithoutMetadata": "a600c0d01c1079ace5cb92ea736f03c44351ad7735e157c020da3c327885ee51"
+        },
+        "inherit": [
+          "KeeperCompatibleInterface",
+          "Ownable",
+          "VRFConsumerBaseV2"
+        ],
+        "libraries": [],
+        "methods": [
+          "(uint64,address,address,bytes32,address,uint256)",
+          "getRandomWord()",
+          "AirDropManual()",
+          "setAddresslist(address[])",
+          "transfer(address,uint256)",
+          "checkUpkeep(bytes)",
+          "performUpkeep(bytes)",
+          "setInterval(uint256)",
+          "getInterval()",
+          "setTokenAmount(uint256)",
+          "getTokenAmount()",
+          "getMaxNumber()",
+          "setGasLimit(uint32)",
+          "getGasLimit()",
+          "foo()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Airdrop",
+            "src": "contracts\\Airdrop.sol:406"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "COORDINATOR",
+            "src": "contracts\\Airdrop.sol:354"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "LINKTOKEN",
+            "src": "contracts\\Airdrop.sol:355"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "s_subscriptionId",
+            "src": "contracts\\Airdrop.sol:357"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "s_keyHash",
+            "src": "contracts\\Airdrop.sol:361"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "s_callbackGasLimit",
+            "src": "contracts\\Airdrop.sol:369"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "s_requestConfirmations",
+            "src": "contracts\\Airdrop.sol:372"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "s_requestConfirmations",
+            "src": "contracts\\Airdrop.sol:372"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "s_numWords",
+            "src": "contracts\\Airdrop.sol:376"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "s_numWords",
+            "src": "contracts\\Airdrop.sol:376"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "max",
+            "src": "contracts\\Airdrop.sol:382"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "min",
+            "src": "contracts\\Airdrop.sol:383"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "min",
+            "src": "contracts\\Airdrop.sol:383"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "_amount",
+            "src": "contracts\\Airdrop.sol:396"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "contracts\\Airdrop.sol:299"
+            },
+            {
+              "label": "token",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(IBEP20)993",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:347"
+            },
+            {
+              "label": "s_callbackGasLimit",
+              "offset": 20,
+              "slot": "1",
+              "type": "t_uint32",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:369"
+            },
+            {
+              "label": "s_randomWords",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:378"
+            },
+            {
+              "label": "s_requestId",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:379"
+            },
+            {
+              "label": "max",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint16",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:382"
+            },
+            {
+              "label": "airDropAddress",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:385"
+            },
+            {
+              "label": "counter",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:389"
+            },
+            {
+              "label": "interval",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:394"
+            },
+            {
+              "label": "lastTimeStamp",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint256",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:395"
+            },
+            {
+              "label": "_amount",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_uint256",
+              "contract": "Airdrop",
+              "src": "contracts\\Airdrop.sol:396"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_contract(IBEP20)993": {
+              "label": "contract IBEP20",
+              "numberOfBytes": "20"
+            },
+            "t_uint16": {
+              "label": "uint16",
+              "numberOfBytes": "2"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint32": {
+              "label": "uint32",
+              "numberOfBytes": "4"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IBEP20": {
+        "src": "contracts\\Airdrop.sol:266",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "decimals()",
+          "symbol()",
+          "name()",
+          "getOwner()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "KeeperBase": {
+        "src": "contracts\\Airdrop.sol:45",
+        "version": {
+          "withMetadata": "58062f1252361b03e749eb25edcc73776b5d837f2aa4309e3f0690b4b7b9e02e",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "KeeperCompatible": {
+        "src": "contracts\\Airdrop.sol:68",
+        "inherit": [
+          "KeeperCompatibleInterface",
+          "KeeperBase"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "KeeperCompatibleInterface": {
+        "src": "contracts\\Airdrop.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "checkUpkeep(bytes)",
+          "performUpkeep(bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "LinkTokenInterface": {
+        "src": "contracts\\Airdrop.sol:194",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "balanceOf(address)",
+          "decimals()",
+          "decreaseApproval(address,uint256)",
+          "increaseApproval(address,uint256)",
+          "name()",
+          "symbol()",
+          "totalSupply()",
+          "transfer(address,uint256)",
+          "transferAndCall(address,uint256,bytes)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Ownable": {
+        "src": "contracts\\Test.sol:367",
+        "version": {
+          "withMetadata": "d3cf2cf8379b98d2a397803a670273440f017a41f7168c10b43e358023df7ade",
+          "withoutMetadata": "8399474e9625c4a2626057b98903d2d5cce78f7f9c20cfa00e98cefa2b358d37",
+          "linkedWithoutMetadata": "8399474e9625c4a2626057b98903d2d5cce78f7f9c20cfa00e98cefa2b358d37"
+        },
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "contracts\\Test.sol:375"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "contracts\\Test.sol:368"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "VRFConsumerBaseV2": {
+        "src": "contracts\\Airdrop.sol:228",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "rawFulfillRandomWords(uint256,uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "VRFConsumerBaseV2",
+            "src": "contracts\\Airdrop.sol:235"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "vrfCoordinator",
+            "src": "contracts\\Airdrop.sol:230"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "VRFCoordinatorV2Interface": {
+        "src": "contracts\\Airdrop.sol:70",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getRequestConfig()",
+          "requestRandomWords(bytes32,uint64,uint16,uint32,uint32)",
+          "createSubscription()",
+          "getSubscription(uint64)",
+          "requestSubscriptionOwnerTransfer(uint64,address)",
+          "acceptSubscriptionOwnerTransfer(uint64)",
+          "addConsumer(uint64,address)",
+          "removeConsumer(uint64,address)",
+          "cancelSubscription(uint64,address)",
+          "pendingRequestExists(uint64)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Box": {
+        "src": "contracts\\Box.sol:5",
+        "version": {
+          "withMetadata": "defd55474ba787ffa91c15c03a8f74b3f78b7989bd540fc507fa7f4bc226dec4",
+          "withoutMetadata": "935b140d997f247b81134770797ee817fe2eb03b7974e132f018770b6aaa0280",
+          "linkedWithoutMetadata": "935b140d997f247b81134770797ee817fe2eb03b7974e132f018770b6aaa0280"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts\\Box.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "Context": {
+        "src": "contracts\\Test.sol:106",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "DividendPayingToken": {
+        "src": "contracts\\Test.sol:1093",
+        "version": {
+          "withMetadata": "dc264885c1dd3e21ca85ff142d68f2dcc0ae6817af279542ebece02361dc7c22",
+          "withoutMetadata": "0384d19b29f712cf192cb71a436b23241f0e7346af935bd4fae2ca4505ead5d8",
+          "linkedWithoutMetadata": "0384d19b29f712cf192cb71a436b23241f0e7346af935bd4fae2ca4505ead5d8"
+        },
+        "inherit": [
+          "DividendPayingTokenOptionalInterface",
+          "DividendPayingTokenInterface",
+          "Ownable",
+          "ERC20",
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [
+          "SafeMath",
+          "SafeMathUint",
+          "SafeMathInt"
+        ],
+        "methods": [
+          "(string,string)",
+          "distributeSHIBDividends(uint256)",
+          "withdrawDividend()",
+          "dividendOf(address)",
+          "withdrawableDividendOf(address)",
+          "withdrawnDividendOf(address)",
+          "accumulativeDividendOf(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "DividendPayingToken",
+            "src": "contracts\\Test.sol:1124"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "SHIB",
+            "src": "contracts\\Test.sol:1098"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "SHIB",
+            "src": "contracts\\Test.sol:1098"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:746"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:748"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:750"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:752"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_string_storage",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:753"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "contracts\\Test.sol:368"
+            },
+            {
+              "label": "magnifiedDividendPerShare",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "DividendPayingToken",
+              "src": "contracts\\Test.sol:1106"
+            },
+            {
+              "label": "magnifiedDividendCorrections",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_mapping(t_address,t_int256)",
+              "contract": "DividendPayingToken",
+              "src": "contracts\\Test.sol:1119"
+            },
+            {
+              "label": "withdrawnDividends",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "DividendPayingToken",
+              "src": "contracts\\Test.sol:1120"
+            },
+            {
+              "label": "totalDividendsDistributed",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_uint256",
+              "contract": "DividendPayingToken",
+              "src": "contracts\\Test.sol:1122"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_int256": {
+              "label": "int256",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_int256)": {
+              "label": "mapping(address => int256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "DividendPayingTokenInterface": {
+        "src": "contracts\\Test.sol:1035",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "dividendOf(address)",
+          "withdrawDividend()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "DividendPayingTokenOptionalInterface": {
+        "src": "contracts\\Test.sol:1072",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "withdrawableDividendOf(address)",
+          "withdrawnDividendOf(address)",
+          "accumulativeDividendOf(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20": {
+        "src": "contracts\\Test.sol:743",
+        "version": {
+          "withMetadata": "8a4a092d1751efa47f5b104e86288be9f217fbca55f5746339b90ebdf7c38664",
+          "withoutMetadata": "4be896a990ee4c63e3767088d4fe52c22483e474244b9819da815f11f2c932ce",
+          "linkedWithoutMetadata": "4be896a990ee4c63e3767088d4fe52c22483e474244b9819da815f11f2c932ce"
+        },
+        "inherit": [
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "(string,string)",
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC20",
+            "src": "contracts\\Test.sol:764"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:746"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:748"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:750"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:752"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_string_storage",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:753"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "IERC20": {
+        "src": "contracts\\Test.sol:17",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Metadata": {
+        "src": "contracts\\Test.sol:346",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IUniswapV2Factory": {
+        "src": "contracts\\Test.sol:266",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "feeTo()",
+          "feeToSetter()",
+          "getPair(address,address)",
+          "allPairs(uint256)",
+          "allPairsLength()",
+          "createPair(address,address)",
+          "setFeeTo(address)",
+          "setFeeToSetter(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IUniswapV2Pair": {
+        "src": "contracts\\Test.sol:286",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transfer(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "DOMAIN_SEPARATOR()",
+          "PERMIT_TYPEHASH()",
+          "nonces(address)",
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "MINIMUM_LIQUIDITY()",
+          "factory()",
+          "token0()",
+          "token1()",
+          "getReserves()",
+          "price0CumulativeLast()",
+          "price1CumulativeLast()",
+          "kLast()",
+          "mint(address)",
+          "burn(address)",
+          "swap(uint256,uint256,address,bytes)",
+          "skim(address)",
+          "sync()",
+          "initialize(address,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IUniswapV2Router01": {
+        "src": "contracts\\Test.sol:122",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "factory()",
+          "WETH()",
+          "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+          "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+          "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+          "swapExactETHForTokens(uint256,address[],address,uint256)",
+          "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+          "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+          "swapETHForExactTokens(uint256,address[],address,uint256)",
+          "quote(uint256,uint256,uint256)",
+          "getAmountOut(uint256,uint256,uint256)",
+          "getAmountIn(uint256,uint256,uint256)",
+          "getAmountsOut(uint256,address[])",
+          "getAmountsIn(uint256,address[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IUniswapV2Router02": {
+        "src": "contracts\\Test.sol:220",
+        "inherit": [
+          "IUniswapV2Router01"
+        ],
+        "libraries": [],
+        "methods": [
+          "removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+          "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+          "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IterableMapping": {
+        "src": "contracts\\Test.sol:654",
+        "version": {
+          "withMetadata": "527b99ccff9ff8947b9739edf24028a41043e54f6e0061afd9d9b1f9cf03174e",
+          "withoutMetadata": "2529bced0f2a5d36eba1c3676ce955be2aff04a961d63f5bc6786a5cd2e6e488",
+          "linkedWithoutMetadata": "2529bced0f2a5d36eba1c3676ce955be2aff04a961d63f5bc6786a5cd2e6e488"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "get(IterableMapping.Map storage,address)",
+          "getIndexOfKey(IterableMapping.Map storage,address)",
+          "getKeyAtIndex(IterableMapping.Map storage,uint256)",
+          "size(IterableMapping.Map storage)",
+          "set(IterableMapping.Map storage,address,uint256)",
+          "remove(IterableMapping.Map storage,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "PSHIB": {
+        "src": "contracts\\Test.sol:1252",
+        "version": {
+          "withMetadata": "871905f52c6cdf64e5b39db3c7b07488e91a6fce417dcc0d74d8fa8e46067dfb",
+          "withoutMetadata": "0ba1ef7208fe37477f5998901f748631776a746c8370ad1821f4e40029558887",
+          "linkedWithoutMetadata": "0ba1ef7208fe37477f5998901f748631776a746c8370ad1821f4e40029558887"
+        },
+        "inherit": [
+          "Ownable",
+          "ERC20",
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "()",
+          "()",
+          "updateDividendTracker(address)",
+          "updateUniswapV2Router(address)",
+          "excludeFromFees(address,bool)",
+          "excludeMultipleAccountsFromFees(address[],bool)",
+          "setMarketingWallet(address payable)",
+          "setMaxTxAmount(uint256)",
+          "setSaleStart(bool)",
+          "setSHIBRewardsFee(uint256)",
+          "setLiquiditFee(uint256)",
+          "setMarketingFee(uint256)",
+          "setAutomatedMarketMakerPair(address,bool)",
+          "updateGasForProcessing(uint256)",
+          "updateClaimWait(uint256,address)",
+          "getClaimWait()",
+          "getTotalDividendsDistributed()",
+          "isExcludedFromFees(address)",
+          "withdrawableDividendOf(address)",
+          "dividendTokenBalanceOf(address)",
+          "setAddress(address,bool)",
+          "excludeFromDividends(address)",
+          "getAccountDividendsInfo(address)",
+          "getAccountDividendsInfoAtIndex(uint256)",
+          "processDividendTracker(uint256)",
+          "claim()",
+          "getLastProcessedIndex()",
+          "getNumberOfDividendTokenHolders()"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 37098,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 37499,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 37710,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 39838,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 39964,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 41301,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PSHIB",
+            "src": "contracts\\Test.sol:1323"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "deadWallet",
+            "src": "contracts\\Test.sol:1262"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "SHIB",
+            "src": "contracts\\Test.sol:1264"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "SHIB",
+            "src": "contracts\\Test.sol:1264"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "swapTokensAtAmount",
+            "src": "contracts\\Test.sol:1266"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "_maxTxAmount",
+            "src": "contracts\\Test.sol:1267"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "blockcount",
+            "src": "contracts\\Test.sol:1269"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "UNIRewardsFee",
+            "src": "contracts\\Test.sol:1270"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "liquidityFee",
+            "src": "contracts\\Test.sol:1271"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "marketingFee",
+            "src": "contracts\\Test.sol:1272"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "totalFees",
+            "src": "contracts\\Test.sol:1273"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "_marketingWalletAddress",
+            "src": "contracts\\Test.sol:1275"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "gasForProcessing",
+            "src": "contracts\\Test.sol:1279"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "IterableMapping",
+            "src": "contracts/Test.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:746"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:748"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:750"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:752"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_string_storage",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:753"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "contracts\\Test.sol:368"
+            },
+            {
+              "label": "uniswapV2Router",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_contract(IUniswapV2Router02)1988",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1255"
+            },
+            {
+              "label": "uniswapV2Pair",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_address",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1256"
+            },
+            {
+              "label": "swapping",
+              "offset": 20,
+              "slot": "7",
+              "type": "t_bool",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1258"
+            },
+            {
+              "label": "saleStart",
+              "offset": 21,
+              "slot": "7",
+              "type": "t_bool",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1259"
+            },
+            {
+              "label": "dividendTracker",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_contract(PSHIBDividendTracker)6245",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1260"
+            },
+            {
+              "label": "deadWallet",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_address",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1262"
+            },
+            {
+              "label": "swapTokensAtAmount",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1266"
+            },
+            {
+              "label": "_maxTxAmount",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1267"
+            },
+            {
+              "label": "blacklistblock",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1268"
+            },
+            {
+              "label": "blockcount",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1269"
+            },
+            {
+              "label": "UNIRewardsFee",
+              "offset": 0,
+              "slot": "14",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1270"
+            },
+            {
+              "label": "liquidityFee",
+              "offset": 0,
+              "slot": "15",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1271"
+            },
+            {
+              "label": "marketingFee",
+              "offset": 0,
+              "slot": "16",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1272"
+            },
+            {
+              "label": "totalFees",
+              "offset": 0,
+              "slot": "17",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1273"
+            },
+            {
+              "label": "_marketingWalletAddress",
+              "offset": 0,
+              "slot": "18",
+              "type": "t_address",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1275"
+            },
+            {
+              "label": "gasForProcessing",
+              "offset": 0,
+              "slot": "19",
+              "type": "t_uint256",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1279"
+            },
+            {
+              "label": "_isExcludedFromFees",
+              "offset": 0,
+              "slot": "20",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1282"
+            },
+            {
+              "label": "automatedMarketMakerPairs",
+              "offset": 0,
+              "slot": "21",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1287"
+            },
+            {
+              "label": "blacklist",
+              "offset": 0,
+              "slot": "22",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "PSHIB",
+              "src": "contracts\\Test.sol:1289"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(IUniswapV2Router02)1988": {
+              "label": "contract IUniswapV2Router02",
+              "numberOfBytes": "20"
+            },
+            "t_contract(PSHIBDividendTracker)6245": {
+              "label": "contract PSHIBDividendTracker",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "PSHIBDividendTracker": {
+        "src": "contracts\\Test.sol:1717",
+        "version": {
+          "withMetadata": "e969067f177360c845f868cbd3e212b82501128095a1e291c7a5bee2033915e4",
+          "withoutMetadata": "f6e7301eb9eb328b19792932c1bc560f371dbb51ddbff94b837c0b67579093b3",
+          "linkedWithoutMetadata": "f6e7301eb9eb328b19792932c1bc560f371dbb51ddbff94b837c0b67579093b3"
+        },
+        "inherit": [
+          "DividendPayingToken",
+          "DividendPayingTokenOptionalInterface",
+          "DividendPayingTokenInterface",
+          "Ownable",
+          "ERC20",
+          "IERC20Metadata",
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [
+          "SafeMath",
+          "SafeMathInt",
+          "IterableMapping"
+        ],
+        "methods": [
+          "()",
+          "withdrawDividend()",
+          "excludeFromDividends(address)",
+          "updateClaimWait(uint256)",
+          "getLastProcessedIndex()",
+          "getNumberOfTokenHolders()",
+          "getAccount(address)",
+          "getAccountAtIndex(uint256)",
+          "setBalance(address payable,uint256)",
+          "process(uint256)",
+          "processAccount(address payable,bool)"
+        ],
+        "linkReferences": [
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 3668,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 4069,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 4280,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 6408,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 6534,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          },
+          {
+            "src": "contracts/Test.sol",
+            "name": "IterableMapping",
+            "length": 20,
+            "start": 7871,
+            "placeholder": "__$bec2f33bc8cb9dcbb654427b9d41ecdae6$__"
+          }
+        ],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PSHIBDividendTracker",
+            "src": "contracts\\Test.sol:1737"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "minimumTokenBalanceForDividends",
+            "src": "contracts\\Test.sol:1730"
+          },
+          {
+            "kind": "external-library-linking",
+            "name": "IterableMapping",
+            "src": "contracts/Test.sol"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:746"
+            },
+            {
+              "label": "_allowances",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:748"
+            },
+            {
+              "label": "_totalSupply",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:750"
+            },
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:752"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_string_storage",
+              "contract": "ERC20",
+              "src": "contracts\\Test.sol:753"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_address",
+              "contract": "Ownable",
+              "src": "contracts\\Test.sol:368"
+            },
+            {
+              "label": "magnifiedDividendPerShare",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "DividendPayingToken",
+              "src": "contracts\\Test.sol:1106"
+            },
+            {
+              "label": "magnifiedDividendCorrections",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_mapping(t_address,t_int256)",
+              "contract": "DividendPayingToken",
+              "src": "contracts\\Test.sol:1119"
+            },
+            {
+              "label": "withdrawnDividends",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "DividendPayingToken",
+              "src": "contracts\\Test.sol:1120"
+            },
+            {
+              "label": "totalDividendsDistributed",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_uint256",
+              "contract": "DividendPayingToken",
+              "src": "contracts\\Test.sol:1122"
+            },
+            {
+              "label": "tokenHoldersMap",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_struct(Map)2873_storage",
+              "contract": "PSHIBDividendTracker",
+              "src": "contracts\\Test.sol:1722"
+            },
+            {
+              "label": "lastProcessedIndex",
+              "offset": 0,
+              "slot": "14",
+              "type": "t_uint256",
+              "contract": "PSHIBDividendTracker",
+              "src": "contracts\\Test.sol:1723"
+            },
+            {
+              "label": "excludedFromDividends",
+              "offset": 0,
+              "slot": "15",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "PSHIBDividendTracker",
+              "src": "contracts\\Test.sol:1725"
+            },
+            {
+              "label": "lastClaimTimes",
+              "offset": 0,
+              "slot": "16",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "PSHIBDividendTracker",
+              "src": "contracts\\Test.sol:1727"
+            },
+            {
+              "label": "claimWait",
+              "offset": 0,
+              "slot": "17",
+              "type": "t_uint256",
+              "contract": "PSHIBDividendTracker",
+              "src": "contracts\\Test.sol:1729"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_int256": {
+              "label": "int256",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_int256)": {
+              "label": "mapping(address => int256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Map)2873_storage": {
+              "label": "struct IterableMapping.Map",
+              "members": [
+                {
+                  "label": "keys",
+                  "type": "t_array(t_address)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "values",
+                  "type": "t_mapping(t_address,t_uint256)",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "indexOf",
+                  "type": "t_mapping(t_address,t_uint256)",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "inserted",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "SafeMath": {
+        "src": "contracts\\Test.sol:423",
+        "version": {
+          "withMetadata": "15e44c3cedab4a777bd669a12ab6f7c62476e5b0f78e940385fa6080b0ed17fc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SafeMathInt": {
+        "src": "contracts\\Test.sol:574",
+        "version": {
+          "withMetadata": "ba4227f43a79d3d2f63b2cc9e21e389f4dee0096dccb789349775cf5b43fe85c",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SafeMathUint": {
+        "src": "contracts\\Test.sol:642",
+        "version": {
+          "withMetadata": "66f7be1354a7ee2e2d566f09af88a7d992cfa03514f90c824cac4e269ed66757",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "MyPGUpgradeable": {
+        "src": "contracts\\new.sol:8",
+        "version": {
+          "withMetadata": "3a7e801190f2d89c71700c3dc5529d1a04b9e79aad93cbc57bef68be39eae381",
+          "withoutMetadata": "4fd6d27c3c617d86bad2dc0753b669a0164a7ccbc9ccd8beea454407e60bd44e",
+          "linkedWithoutMetadata": "4fd6d27c3c617d86bad2dc0753b669a0164a7ccbc9ccd8beea454407e60bd44e"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(address payable)",
+          "sendPayment()",
+          "withdraw()",
+          "balance()",
+          "return5()",
+          "return6()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_initialized",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+            },
+            {
+              "label": "_initializing",
+              "offset": 1,
+              "slot": "0",
+              "type": "t_bool",
+              "contract": "Initializable",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_uint256)50_storage",
+              "contract": "ContextUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+            },
+            {
+              "label": "_owner",
+              "offset": 0,
+              "slot": "51",
+              "type": "t_address",
+              "contract": "OwnableUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+            },
+            {
+              "label": "__gap",
+              "offset": 0,
+              "slot": "52",
+              "type": "t_array(t_uint256)49_storage",
+              "contract": "OwnableUpgradeable",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:87"
+            },
+            {
+              "label": "contractVersion",
+              "offset": 0,
+              "slot": "101",
+              "type": "t_uint32",
+              "contract": "MyPGUpgradeable",
+              "src": "contracts\\new.sol:11"
+            },
+            {
+              "label": "wallet",
+              "offset": 4,
+              "slot": "101",
+              "type": "t_address_payable",
+              "contract": "MyPGUpgradeable",
+              "src": "contracts\\new.sol:12"
+            },
+            {
+              "label": "escrow",
+              "offset": 0,
+              "slot": "102",
+              "type": "t_contract(EscrowUpgradeable)610",
+              "contract": "MyPGUpgradeable",
+              "src": "contracts\\new.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_address_payable": {
+              "label": "address payable",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]",
+              "numberOfBytes": "1568"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]",
+              "numberOfBytes": "1600"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(EscrowUpgradeable)610": {
+              "label": "contract EscrowUpgradeable",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint32": {
+              "label": "uint32",
+              "numberOfBytes": "4"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    }
+  ]
+}
