@@ -6,3 +6,5 @@ The repository showcases how a DApp can look like.
 
 In the Repository you will find a custom built BEP-20 Smart contract that has  
 staking and rewarding mechanisms in place. 
+
+this is test projects
